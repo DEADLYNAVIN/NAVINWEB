@@ -36,7 +36,7 @@ h1 {
     transition: transform 0.2s;
     display: flex;
     align-items: center;
-    background-image: url(Resource/l.gif);
+    background-image: url(resource/l.gif);
     background-repeat: no-repeat;
 background-position: 40%;
 }
