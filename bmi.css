@@ -1,0 +1,88 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Black background color */
+    color: #ffffff; /* White text color for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(resource/16.jpg);
+    background-size: cover;
+}
+
+.container {
+    background-color: transparent; /* Transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Red shadow for a dramatic effect */
+    width: 400px; /* Increased width */
+   
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px; /* Adjusted font size */
+    color: #ffffff; /* White text color for headings */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px; /* Adjusted font size */
+    color: #ffffff; /* White text color for labels */
+}
+
+input {
+    width: 90%; /* Increased width */
+    padding: 10px;
+    border: 2px solid #000000; /* Red border color for inputs */
+    border-radius: 5px;
+    background-color:rgb(155, 151, 151); 
+    color: #ffffff; 
+    font-size: 16px; 
+}
+
+button {
+    width: 90%; 
+    padding: 12px; 
+    background-color: #000000;
+    color:rgb(255,0,0);
+    border: 2px solid white; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+button:hover {
+    background-color: #794040; 
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px; /* Adjusted font size */
+    color: #65d669; /* Green text color for links */
+    text-align: center; /* Center text */
+    justify-content: center;
+    align-self: center; /* Center the link horizontally */
+    margin-top: auto; /* Push the link to the bottom */
+    padding-top: 10px; /* Add some padding at the top */
+    box-shadow: white;
+}
+
+a:hover {
+    color: #ccff33; /* Lighter green color on hover */
+}
+

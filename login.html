@@ -1,0 +1,66 @@
+<!-- <?php
+session_start();
+include("home.php");
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    if (!empty($username) && !empty($password)) {
+        // Check if the username is an email or a regular username
+        if (filter_var($username, FILTER_VALIDATE_EMAIL)) {
+            // Query to check the email
+            $query = "SELECT * FROM reg WHERE email = '$username' AND password = '$password'";
+        } else {
+            // Query to check the username
+            $query = "SELECT * FROM reg WHERE username = '$username' AND password = '$password'";
+        }
+        $_SESSION['username'] = $username; //storing session variable
+
+        $result = mysqli_query($con, $query);
+
+        if ($result && mysqli_num_rows($result) > 0) {
+            // Set session variables
+            $_SESSION['user'] = $username;
+            // Redirect to home page
+            header("Location:http://localhost/index.html");
+            die;
+        } else {
+            echo "<script type='text/javascript'> alert('Invalid login credentials 😔')</script>";
+        }
+    } else {
+        echo "<script type='text/javascript'> alert('Please fill all fields 😠')</script>";
+    }
+}
+?> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="reglog.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1><b>Login</b></h1>
+        <form method="POST">
+            <div class="input-group">
+                <label for="username">E-mail or Username:</label>
+                <input type="text && email" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <br>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+</body>
+</html>

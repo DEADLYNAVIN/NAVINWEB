@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Timer</title>
+    <link rel="stylesheet" href="train.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stretching</h1>
+        <br><br>
+        <div class="layout">
+            <div class="exercise-list">
+                <div class="exercise" data-name="Calf-Stretch">
+                    <img src="resource/stretch/calf stretch.gif" alt="Exercise 1 GIF">
+                    <span>Exercise 1</span>
+                </div>
+                <div class="exercise" data-name="Core-Crunch">
+                    <img src="resource/stretch/core crunch.gif" alt="Exercise 2 GIF">
+                    <span>Exercise 2</span>
+                </div>
+                <div class="exercise" data-name="Cobra-Stretch">
+                    <img src="resource/stretch/cobra stretch.gif" alt="Exercise 3 GIF">
+                    <span>Exercise 3</span>
+                </div>
+                <div class="exercise" data-name="Cossack-Squat">
+                    <img src="resource/stretch/cossack squat.gif" alt="Exercise 4 GIF">
+                    <span>Exercise 4</span>
+                </div>
+                <div class="exercise" data-name="Hip-Raise">
+                    <img src="resource/stretch/hip raise.gif" alt="Exercise 5 GIF">
+                    <span>Exercise 5</span>
+                </div>
+                <div class="exercise" data-name="Reverse-Flutter Kicks">
+                    <img src="resource/stretch/reverse flutter kicks.gif" alt="Exercise 6 GIF">
+                    <span>Exercise 6</span>
+                </div>
+                <div class="exercise" data-name="Shoulder-Stretch">
+                    <img src="resource/stretch/shoulder stretch.gif" alt="Exercise 7 GIF">
+                    <span>Exercise 7</span>
+                </div>
+                <div class="exercise" data-name="Uttanasana">
+                    <img src="resource/yoga/uttanasana.gif" alt="Exercise 8 GIF">
+                    <span>Exercise 8</span>
+                </div>
+                <div class="exercise" data-name="Trikonasana">
+                    <img src="resource/yoga/trikonasan.gif" alt="Exercise 9 GIF">
+                    <span>Exercise 9</span>
+                </div>
+                <div class="exercise" data-name="Skater-Switch">
+                    <img src="resource/endurance/skater switch.gif" alt="Exercise 10 GIF">
+                    <span>Exercise 10</span>
+                </div>
+            </div>
+            <div class="current-exercise">
+                <h2 id="exercise-name">Current Exercise</h2>
+                <img id="exercise-gif" src="" alt="Exercise GIF">
+                <div id="timer">01:00</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="startBtn">Start/Stop</button>
+            <button id="resetBtn">Reset</button>
+            <button id="homeBtn">Exit</button>
+        </div>
+    </div>
+    <script src="train.js"></script>
+</body>
+</html>

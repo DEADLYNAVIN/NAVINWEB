@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+            margin: 0;
+            background-image: url(Resource/14.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .logo:hover{
+            transform: scale(1.1);
+            transition: all0 0.5 ease;
+        }
+        .logo .fit {
+            color: rgb(255, 255, 255);
+        }
+        .logo .core {
+            color: red;
+        }
+        .container {
+            background-color:darkgray;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(240, 227, 227, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+        }
+        h1 {
+            color: hsl(0, 0%, 100%);
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #883b3b;
+        }
+        .animation {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 30px;
+            opacity: 0;
+            transition: opacity 1s, transform 0.5s;
+            color: #ff5722;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="logo"><span class="fit">Fit</span><span class="core">-Core</span></div>
+    <div class="container">
+        <h1>Calories Burned</h1>
+        <button id="calculateButton">Calculate Calories</button>
+        <div id="calorieResult" class="animation">0 calories</div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const calculateButton = document.getElementById("calculateButton");
+            const calorieResult = document.getElementById("calorieResult");
+
+            // Function to simulate calorie calculation with animation
+            calculateButton.addEventListener("click", function() {
+                // Simulate fetching calorie data from previous page (e.g., using URL parameters)
+                const caloriesBurned = 200; // Example calorie count
+                let count = 0;
+                const duration = 2000; // 2 seconds
+                const intervalTime = 50; // Interval time in milliseconds
+
+                // Animation effect
+                calorieResult.style.opacity = 0;
+                calorieResult.style.transform = "scale(0.5)";
+                const interval = setInterval(function() {
+                    count += (caloriesBurned / (duration / intervalTime));
+                    calorieResult.innerText = Math.floor(count) + " calories";
+                    if (count >= caloriesBurned) {
+                        clearInterval(interval);
+                        calorieResult.innerText = caloriesBurned + " calories";
+                        calorieResult.style.opacity = 1;
+                        calorieResult.style.transform = "scale(1)";
+                    }
+                }, intervalTime);
+            });
+        });
+    </script>
+</body>
+</html>

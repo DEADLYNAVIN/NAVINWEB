@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c24949; /* Dark background */
+    margin: 0;
+    background-image: url(resource/14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background:transparent; /* Dark container background */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-height: 100vh;
+    overflow: auto;
+    color: #fff; /* White text color */
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffffff; /* Red title */
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercise-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.exercise {
+    flex-basis: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercise img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #000000; /* Red border around images */
+}
+
+.current-exercise {
+    text-align: center;
+    margin-top: 1rem;
+    border:2px solid transparent;
+}
+
+#exercise-gif {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+#timer {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #00ff6a; /* Red timer text */
+}
+
+.buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #ff0000; /* Red button background */
+    color: #fff; /* White text color */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #cc0000; /* Darker red on hover */
+}

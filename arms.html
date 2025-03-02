@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Timer</title>
+    <link rel="stylesheet" href="train.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Arms-Training</h1>
+        <br><br>
+        <div class="layout">
+            <div class="exercise-list">
+                <div class="exercise" data-name="Body-Ups">
+                    <img src="resource/arms/body ups.gif" alt="Exercise 1 GIF">
+                    <span>Exercise 1</span>
+                </div>
+                <div class="exercise" data-name="Cross-Body Climb">
+                    <img src="resource/arms/cross body moutain climb.gif" alt="Exercise 2 GIF">
+                    <span>Exercise 2</span>
+                </div>
+                <div class="exercise" data-name="Elbow Reverse Pushup">
+                    <img src="resource/arms/elbow reverse push up.gif" alt="Exercise 3 GIF">
+                    <span>Exercise 3</span>
+                </div>
+                <div class="exercise" data-name="Handstand">
+                    <img src="resource/arms/handstand.jpg" alt="Exercise 4 GIF">
+                    <span>Exercise 4</span>
+                </div>
+                <div class="exercise" data-name="Plank">
+                    <img src="resource/arms/plank.gif" alt="Exercise 5 GIF">
+                    <span>Exercise 5</span>
+                </div>
+                <div class="exercise" data-name="Push-Ups">
+                    <img src="resource/arms/push ups.gif" alt="Exercise 6 GIF">
+                    <span>Exercise 6</span>
+                </div>
+                <div class="exercise" data-name="W-Press">
+                    <img src="resource/arms/w press.gif" alt="Exercise 7 GIF">
+                    <span>Exercise 7</span>
+                </div>
+                <div class="exercise" data-name="One-Arm Cable Fly">
+                    <img src="resource/arms/one arm decline cable fly.gif" alt="Exercise 8 GIF">
+                    <span>Exercise 8</span>
+                </div>
+                <div class="exercise" data-name="Single-Arm Push-Ups">
+                    <img src="resource/arms/single arm pushup.gif" alt="Exercise 9 GIF">
+                    <span>Exercise 9</span>
+                </div>
+                <div class="exercise" data-name="Battle Rope">
+                    <img src="resource/endurance/battle rope.gif" alt="Exercise 10 GIF">
+                    <span>Exercise 10</span>
+                </div>
+            </div>
+            <div class="current-exercise">
+                <h2 id="exercise-name">Current Exercise</h2>
+                <img id="exercise-gif" src="" alt="Exercise GIF">
+                <div id="timer">01:00</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="startBtn">Start/Stop</button>
+            <button id="resetBtn">Reset</button>
+            <button id="homeBtn">Exit</button>
+        </div>
+    </div>
+    <script src="train.js"></script>
+</body>
+</html>
